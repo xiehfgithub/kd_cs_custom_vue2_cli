@@ -1,0 +1,25 @@
+{
+  "name": "kd_cs_custom_vue2_cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "inquirer": "^6.2.2",
+    "ora": "^3.2.0"
+  },
+  "bin": {
+    "kd": "bin/hf",    
+    "kd-cs-add": "bin/hf-add",
+    "kd-cs-delete": "bin/hf-delete",
+    "kd-cs-list": "bin/hf-list",
+    "kd-cs-init": "bin/hf-init"
+  }
+}

@@ -1,0 +1,21 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+# [*.{js,py}]
+charset = utf-8
+
+# trim_trailing_whitespace设置为true的时候会将换行符前面的字符删除空格，设置为false时不会删除
+trim_trailing_whitespace = true
+# insert_final_newline设置为true的时候确保文件保存的时候以换行符结尾，设置为false则不会。这个也果断设置为true，因为防止有些读取文件的功能等待那个让它退出的换行符。
+insert_final_newline = true
+end_of_line = lf
+# editorconfig-tools is unable to ignore longs strings or urls
+max_line_length = off
+
+[CHANGELOG.md]
+indent_size = false

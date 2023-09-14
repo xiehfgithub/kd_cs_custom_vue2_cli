@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+console.log('hello hf fans');
+
+const program = require('commander')
+ 
+// 定义当前版本
+// 定义使用方法
+// 定义四个指令
+program
+ .version(require('../package').version)
+ .usage('<command></command> [options]')
+ .command('cs-add', 'add a new template')
+ .command('cs-delete', 'delete a template')
+ .command('cs-list', 'list all the templates')
+ .command('cs-init', 'generate a new project from a template')
+  
+// 解析命令行参数
+program.parse(process.argv)

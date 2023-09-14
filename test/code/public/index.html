@@ -1,0 +1,65 @@
+<!--
+ * @Author: hfxie
+ * @Date: 2023-09-12 10:10:10
+ * @LastEditors: haifeng_xie haifeng_xie@kingdee.com
+ * @LastEditTime: 2023-09-12 11:05:55
+ * @Description: 本地开发入口
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="kdfont.css">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        /* height: 100vh; */
+        background-color: #e2e7ef;
+        box-sizing: border-box;
+      }
+      /* 苍穹滚动条的滑轨背景颜色 */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+
+        background-color: #ffffff;
+      }
+      ::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      /* 模拟苍穹打开调试面板浏览器左侧宽度1350，上左侧边栏缩起状态 */
+      /* #demo3{
+        width: 1280px;
+        height: 714px;
+        margin-top: 212px;
+        margin-left: 60px;
+        position: relative;
+      } */
+      #demo3{
+        width: 90%;
+        height: 100%;
+        min-height: 400px;
+        background-color: #ffffff;
+        margin: 10px auto;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <!-- <%= htmlWebpackPlugin.options.title %> -->
+    <div id="demo3"><div id="app"></div></div>
+
+  </body>
+</html>

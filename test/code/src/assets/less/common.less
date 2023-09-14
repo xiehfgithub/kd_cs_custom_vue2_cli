@@ -1,0 +1,105 @@
+// 左侧WBS表格尺寸
+// @taskInfoWidth: 400px;
+@taskInfoCellWidth: 100px; // WBS表头默认宽度--会被配置值覆盖
+
+@cSelected: #ffffff; // 选择框选中态 √颜色
+@cCheckbox: #409eff; // 选择框选中态 背景颜色
+@cWBSRowBg: #f2f6ff; // 选中行背景色
+// 右侧时间轴表头高度
+@taskInfoHeight: @timesLineHeight * 2;  // WBS表头高度
+@timesLineHeight: 25px; //时间轴单行高度 50px;
+// 右侧表格尺寸
+@cellHeight: 36px; // 同步修改
+@cellWidth: 25px; // 同步修改
+@taskLinkWrapWidth: @cellWidth / 2;
+
+// 苍穹基础色
+@cNomal: #666666;
+@cShallow: #BBBBBB;
+@orange: #FF903D;
+@cRed: #E1453E;
+@cBlack: #000000;
+@cblue: #5582f3;
+@disabled: #b2b2b2;
+@cFontBlue: #276ff5;
+
+@cBorder:#ececec; // #cccccc; // 打印勉强能有网格线出来
+@cTran: transparent;
+// 任务块
+@bgActRow: #f2f6ff; // 任务行选中底色
+@tWrapBg: rgba(153, 153, 153, 0.2); // 外框背景颜色
+@tNomal: #3db9d3; // 默认横道块颜色 - 正常绿
+@tGroup: purple; // 默认统计横道颜色 - 紫色
+@tLandmarks: #E1453E; // 默认里程碑横道颜色 - 红色
+
+@taskHeight: 20px; // 同步修改
+@initTaskTop: 0; // 7px;
+@initTaskLeft: 0; // 30px; @cellWidth / 2
+
+// @cTaskline: #ffa011; // 横道连线实线颜色-old
+@cTaskline: #ec9f2c; // 横道连线实线颜色
+@lineHeight: 2px; // 横道连线实线宽|高度
+@lineArrow: 4px; // 连线箭头显示大小
+@lineArrowDiffSize: (-1 * @lineArrow) + 1px; // 连线箭头偏移位置大小
+
+@line-j-mid-height: @cellHeight - @taskHeight;
+
+@fs6: 6px;
+@fs7: 7px;
+@fs8: 8px;
+@fs10: 10px;
+@fs12: 12px;
+@fs14: 14px;
+@fs16: 16px;
+@fs18: 18px;
+@fs20: 20px;
+
+// 底层表格行背景颜色
+@gantt-cross-even: transparent;
+@gantt-cross-odd: #efefef;
+.cross {
+    &:nth-child(even) {
+        background-color: @gantt-cross-even;
+    }
+
+    &:nth-child(odd) {
+        background-color: @gantt-cross-odd;
+    }
+}
+// 斜线背景 加此属性的同时需额外设置background-color
+.task-bg-slant() {
+    background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, .2) 10px, transparent 0, transparent 20px);
+}
+// 横轴相对居中
+.x-line-center () {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+// 文字单行
+.text-oneline(){
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+// 全局类
+.center {
+    text-align: center !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div,
+span,
+a {
+    box-sizing: border-box;
+}
+
+.empty-box{
+    width: 100%;
+    height: 100%;
+}
+
